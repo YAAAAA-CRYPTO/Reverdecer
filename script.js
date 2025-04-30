@@ -1,13 +1,12 @@
-// script.js
+// Botón de "Únete"
+document.getElementById('btnUnete').addEventListener('click', function() {
+    document.getElementById('mensaje').textContent = "¡Gracias por unirte a la reforestación!";
+});
 
-// Esperamos a que el contenido cargue
-document.addEventListener('DOMContentLoaded', () => {
-    const boton = document.getElementById('btnUnete');
-    const mensaje = document.getElementById('mensaje');
+// Slider de "Antes y Después"
+const slider = document.getElementById('slider');
+const antes = document.querySelector('.antes');
 
-    boton.addEventListener('click', () => {
-        mensaje.textContent = "¡Gracias por sumarte! Cada acción cuenta para salvar nuestro planeta. 🌎🌳";
-        boton.disabled = true; // desactivar el botón para no spamearlo
-        boton.style.backgroundColor = '#388e3c'; // cambiar color como "confirmado"
-    });
+slider.addEventListener('input', function() {
+    antes.style.clipPath = `polygon(0 0, ${this.value}% 0, ${this.value}% 100%, 0% 100%)`;
 });
