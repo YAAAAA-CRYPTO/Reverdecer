@@ -214,3 +214,33 @@ footer {
     width: 100%;
     margin-top: 20px;
 }
+#blog {
+    background-color: #f0f9f0;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 2px solid #4caf50;
+}
+
+#blog h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.entrada-blog {
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.entrada-blog h3 {
+    margin-top: 0;
+    color: #388e3c;
+}
+
+.entrada-blog a {
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: bold;
+}
